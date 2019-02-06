@@ -1,3 +1,6 @@
+const float PI = 3.14159F;
+const unsigned int DAYSINTHEYEAR = 365U;
+const unsigned char DAYSINTHEWEEK = 7;
 int main()
 {
 	/* ќбъ€вление переменных.
@@ -40,28 +43,34 @@ int main()
 	*/
 	int a1 = 1;
 	const short int A2 = 0xF;
-	const long int A3=07;
+	const long int A3 = 07;
 	char a4 = 0b101;
 	char a5 = 'f';
 	unsigned int a6 = 15U;
-
+	const double a7 = 20L;
 	/*
 	*	 акой тип переменной был бы правильным дл€ хранени€ следующей информации?
-	*		ваш возраст
+	*		ваш возраст 
 	*		площадь ващего заднего двора
 	*		количество звезд в галактике
 	*		средний уровень выпадени€ осадков за €нварь
 	*
 	*	—оздайте подход€щие информативные имена переменных дл€ хранени€ этой информации
 	*/
-
+	unsigned char age;
+	float area;
+	long double NumberOfStars;
+	unsigned char JanAvRainfall;
 	/*
 	*	ќбъ€вите глобальную константу дл€ числа pi, равного 3.14159
 	*	ќбъ€вите переменную типа float и инициализируйте ее, использу€ константу pi.
 	*	ќбъ€вите глобальную константу, котора€ содержит значени€ дней в году
 	*	ќбъ€вите глобальную константу, котора€ содержит значени€ дней в неделе
-
 	*	¬ам необходимо посчитать количество целых недель в году.
 	*	ќбъ€вите переменную подход€щего типа и проинициализируйте ее с помощью ранее объ€вленных констант
 	*/
+	float pi1 = PI;
+	int week = DAYSINTHEYEAR / DAYSINTHEWEEK;
+	unsigned int b = DAYSINTHEYEAR;
+	unsigned int b = DAYSINTHEWEEK;
 }
