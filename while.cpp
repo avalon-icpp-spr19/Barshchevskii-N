@@ -3,7 +3,7 @@
 using namespace std;
 
 int main()
-{	
+{
 	/*
 	«адание 1
 	ѕрограмма получает на вход последовательность целых неотрицательных чисел,
@@ -92,7 +92,7 @@ int main()
 	cin >> number4;
 	while (true)
 	{
-		if (pow(st,2) <= number4)
+		if (pow(st, 2) <= number4)
 		{
 			++st;
 		}
@@ -117,6 +117,25 @@ int main()
 	10							      55
 	25							      75025
 	*/
+	int n, fib, fib0 = 1, fib1 = 1, i = 3;
+	cin >> n;
+	fib = fib0 + fib1;
+	while (i < n)
+	{
+		fib0 = fib1;
+		fib1 = fib;
+		fib = fib0 + fib1;
+		i++;
+	}
+	if (n == 1 || n == 2)
+	{
+		cout << 0;
+	}
+	else
+
+	{
+		cout << fib;
+	}
 	/*
 	«адание 6 (дополнительное)
 	Ёлемент последовательности называетс€ локальным максимумом,
