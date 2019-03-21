@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits>
 
 using namespace std;
 
@@ -15,8 +16,8 @@ int main()
 	1 9 -3 -3 2 1	0				-3 9
 	1 2 5 4 3 5 4 5 0			1 5
 	*/
-	int min1 = 1000000;
-	int max1 = -1000000;
+	int min1 = numeric_limits<int>::max();
+	int max1 = numeric_limits<int>::min();
 	while (true)
 	{
 		int number;
