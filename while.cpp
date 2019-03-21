@@ -88,21 +88,22 @@ int main()
 	15							      16
 	100							      128
 	*/
-	int number4, st1;
-	int st = 0;
-	cin >> number4;
-	while (true)
-	{
-		if (pow(st, 2) <= number4)
+		int number4, st1;
+		int st = 0;
+		cin >> number4;
+		while (true)
 		{
-			++st;
+			if (pow(2, st) <= number4)
+			{
+				++st;
+			}
+			else
+			{
+				break;
+			}
 		}
-		else
-		{
-			break;
-		}
-	}
-	cout << pow(st, 2) << endl;
+		cout << pow(2, st) << endl;
+	
 	/*
 	Задание 5
 	Последовательность Фибоначчи определяется так:
@@ -118,25 +119,31 @@ int main()
 	10							      55
 	25							      75025
 	*/
-	int n, fib, fib0 = 1, fib1 = 1, i = 3;
-	cin >> n;
-	fib = fib0 + fib1;
-	while (i < n)
-	{
-		fib0 = fib1;
-		fib1 = fib;
+		int n, fib, fib0 = 0, fib1 = 1, i = 2;
+		cin >> n;
 		fib = fib0 + fib1;
-		i++;
-	}
-	if (n == 1 || n == 2)
-	{
-		cout << 0;
-	}
-	else
+		while (i < n)
+		{
+			fib0 = fib1;
+			fib1 = fib;
+			fib = fib0 + fib1;
+			i++;
+		}
+		if (n == 0)
+		{
+			cout << 0;
+		}
+		else
+			if (n == 1)
+			{
+				cout << 1;
 
-	{
-		cout << fib;
-	}
+			}
+			else
+			{
+				cout << fib;
+			}
+}
 	/*
 	Задание 6 (дополнительное)
 	Элемент последовательности называется локальным максимумом,
