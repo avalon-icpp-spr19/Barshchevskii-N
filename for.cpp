@@ -21,11 +21,10 @@ int main()
 	cou = 0;
 	for (int i = 100; i < 1000; ++i)
 	{
-		summ = i % 10 + i / 100 + (i % 100 / 10);
-		cou = (num == summ) ? ++cou : cou;
+	summ = i % 10 + i / 100 + (i % 100 / 10);
+	cou = (num == summ) ? ++cou : cou;
 	}
 	std::cout << cou;
-
 	/*Задание 2
 	Вы решили помочь Васе с разработкой его игры и взяли на себя красивый вывод сообщений в игре.
 	Напишите программу, которая принимает на вход строку текста
@@ -49,17 +48,16 @@ int main()
 	cout << "+";
 	for (int i = 1; i <= size + 2; ++i)
 	{
-		cout << "-";
+	cout << "-";
 	}
 	cout << "+" << endl;
 	cout << "|" << " " << line << " " << "|" << endl;
 	cout << "+";
 	for (int i = 1; i <= size + 2; ++i)
 	{
-		cout << "-";
+	cout << "-";
 	}
 	cout << "+" << endl;
-
 	/*Задание 3
 	Стали известны подробности про новую игру Васи.
 	Оказывается ее действия разворачиваются на шахматных досках нестандартного размера.
@@ -73,9 +71,16 @@ int main()
 	#.#.#*/
 	int n3, sqr;
 	cin >> n3;
-	sqr = 0;
 	for (int i = 0; i < n3; i++)
 	{
+		if (i % 2 == 0)
+		{
+			sqr = 0;
+		}
+		else
+		{
+			sqr = 1;
+		}
 		for (int j = 0; j < n3; j++)
 		{
 			if (sqr % 2 == 0)
@@ -113,7 +118,7 @@ int main()
 	*/
 	int n4;
 	cin >> n4;
-	for (int i = 1; i <= n4*2; i=i+2)
+	for (int i = 1; i <= n4 * 2; i = i + 2)
 	{
 		for (int j = 1; j <= i; j++)
 		{
@@ -121,7 +126,7 @@ int main()
 		}
 		cout << endl;
 	}
-	for (int i = n4*2-3; i >= 0; i = i - 2)
+	for (int i = n4 * 2 - 3; i >= 0; i = i - 2)
 	{
 		for (int j = 1; j <= i; ++j)
 		{
